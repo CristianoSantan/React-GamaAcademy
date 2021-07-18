@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Módulo 07 - React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Por que React?
+- O que é:
 
-## Available Scripts
+  - Lib para a criação de intefaces;
+  - Utilizada para a construção de SPA (Single Page Applications);
+  - Podemos chamar de framework, devido a seu ecossistema;
+    - ReactJS
+    - React Native
+    - Redux
+    - Webpack
+    - Etc...
+  - Tudo fica dentro do JavaScript (elementos visuais, lógica e estilo);
 
-In the project directory, you can run:
+- Vantagens:
 
-### `yarn start`
+  - Organização do código:
+    - Dividir nosso app/código em blocos especifícos;
+    - O funcionamento de um componente não interfere em outro;
+    - Se um componente é removido, o resto continua funcionando;
+  - Divisão de responsabilidades:
+    - Back-end: Regras de negócio
+    - Front-end: interface
+  - Programação declarativa
+    - Dizemos ao código o que queremos, ele se encarrega do resto;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Preparando o ambiente
+- Fundamentos do React
+- Consumindo dados de uma API
+- Instalando e configurando react-router-dom
+- Importando as rotas no componente App
+- Organização, boas práticas e componentes de estilo
+- Salvando dados no Storage
+- Renderizando repositórios e programação declarativa
+- Link react-router-dom
+- Tratamento de erros e use History
+- Conditional rendering
+- Daqui pra frente e encerramento
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Para se aprofundar:
 
-### `yarn test`
+### React Context API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- API do próprio React para lidar com estados muito complexos;
+- Cria contextos para compartilhamento de dados (estado);
+- Corrige muito bem o problema de prop drilling: quando você passa a mesma para propriedade para muitos compnents filhos;
 
-### `yarn build`
+### Redux
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Cria um estado global, que serpa acessado por toda a aplicação;
+- Lida muito bem com estados muito complexos e side effects (quando um evento ocorre por causa de uma ação do usuário ou da própria aplicação);
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Context API ou Redux?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Context API contextos especificos;
+Redux cria um contexto global;
+Context API é um hook do próprio React;
+Redux é um pacote à parte, podendo ser usado com Angular, Vue, etc;
+Redux lida com estado e Side Effects;
+Context API lida somente com estado;
 
-### `yarn eject`
+Conclusão: Se sua aplicação precisa de uma gestão complexa de estado e precisa lidar com muitas ações acontecendo em diferentes partes do aplicativo, use Redux; se você precisa lidar com o compartilhamento de dados entre componentes e evitar prop drilling, Context API;
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Gatsby.js
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Framework baseado em React;
+- Tem todo um ecossistema já preparado para garantir o máximo de produtividade pro desenvolvedor;
+- integração com GraphQL;
+- Você desenvolve com React e ele te devolve uma página estática (diferente de CMS's como Worldpress, que gera um site dinâmico);
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Next.js
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Framework open source, mantida pela Zeit;
+- Visa facilitar e padronizar o desenvolvimento de aplicações React;
+- Possui ferramentas que lidam com problemas referentes a SEO, com suporte a SSR (server side rendering);
